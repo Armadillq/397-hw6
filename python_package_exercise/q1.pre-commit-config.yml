@@ -1,0 +1,22 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0 # Use the latest version
+    hooks:
+      - id: check-added-large-files
+        args: ['--maxkb=100'] # Set the maximum file size (in KB)
+
+  - repo: https://github.com/psf/black
+    rev: 22.3.0  # Use the latest version
+    hooks:
+      - id: black
+        language_version: python3.8 # Specify your Python version
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 4.0.1  # Use the latest version
+    hooks:
+      - id: flake8
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0 # Use the latest version
+    hooks:
+      - id: detect-private-key
