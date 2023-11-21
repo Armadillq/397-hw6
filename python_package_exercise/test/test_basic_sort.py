@@ -19,7 +19,7 @@
 import pytest
 import numpy as np
 
-from your_module_name import bubble_sort, quick_sort, insertion_sort  # Import your sorting functions
+from main import bubble_sort, quick_sort, insertion_sort  # Import your sorting functions
 
 def is_sorted(arr):
     """
