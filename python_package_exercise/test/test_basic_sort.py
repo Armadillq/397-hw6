@@ -20,7 +20,7 @@ import pytest
 import numpy as np
 
 # from main import bubble_sort, quick_sort, insertion_sort
-from ..basic_sort_UNIQUE_SUFFIX.int_sort import bubble, quick, insertion
+from basic_sort_UNIQUE_SUFFIX.int_sort import bubble, quick, insertion
 
 
 def is_sorted(arr):
