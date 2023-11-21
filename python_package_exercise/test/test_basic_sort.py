@@ -19,24 +19,34 @@
 import pytest
 import numpy as np
 
-def is_sorted(self, int_list):
+from your_module_name import bubble_sort, quick_sort, insertion_sort  # Import your sorting functions
+
+def is_sorted(arr):
     """
-    Testing oracle.
+    Helper function to check if an array is sorted.
     """
-    return True
+    return all(arr[i] <= arr[i+1] for i in range(len(arr)-1))
 
 @pytest.fixture
 def int_lists():
-    # fixture which creates testing data for all tests
-    return [[3,2,1],
-	        [1,1,1],
-			np.random.randint(low=-10, high=200, size=5)] 
-    
-def test_bubble(int_lists):
-    assert True
+    """
+    Fixture that creates testing data for all tests.
+    """
+    return [
+        [3, 2, 1],
+        [1, 1, 1],
+        list(np.random.randint(low=-10, high=200, size=5)),
+        [],
+        [5, 4, 3, 2, 1],
+        [1, 2, 3, 4, 5]
+    ]
 
-def test_quick(int_lists):
-    assert True
-
-def test_insertion(int_lists):
-    assert True
+@pytest.mark.parametrize("sort_function", [bubble_sort, quick_sort, insertion_sort])
+def test_sort(int_lists, sort_function):
+    """
+    Parametrized test that applies each sorting function to different lists.
+    """
+    for arr in int_lists:
+        arr_copy = arr[:]  # Make a copy to preserve the original list
+        sort_function(arr_copy)
+        assert is_sorted(arr_copy), f"List was not sorted by {sort_function.__name__}: {arr_copy}"
