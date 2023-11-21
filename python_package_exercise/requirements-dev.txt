@@ -5,5 +5,7 @@ flake8
 black
 wheel
 packaging
+numpy
+pytest
 pre-commit
 -rrequirements.txt
