@@ -20,12 +20,10 @@
 This module sorts lists of integers...
 """
 
-
 def swap(arr, i, j):
     temp = arr[j]
     arr[j] = arr[i]
     arr[i] = temp
-
 
 def bubble(int_list):
     """
@@ -46,7 +44,6 @@ def bubble(int_list):
         bubble(int_list)
 
     return
-
 
 def quick(int_list):
     """
@@ -89,7 +86,6 @@ def quick(int_list):
 
     # return
     return
-
 
 def insertion(int_list):
     """
