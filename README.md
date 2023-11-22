@@ -18,11 +18,17 @@ These instructions will set up and run the project on your local machine.
 Install dependencies:
 
 Copy code
+
 pip install -r requirements.txt
+
+
 Set up pre-commit hooks:
 
 bash
+
+
 Copy code
+
 pre-commit install
 Pre-commit Configuration
 
@@ -30,38 +36,57 @@ We use pre-commit hooks to ensure code consistency and prevent the commit of lar
 
 check-added-large-files: Limits maximum allowed file size to 100KB.
 detect-private-key: Detects the presence of private keys.
-Code Quality Tools
+
+
+Code Quality Tools:
+
 We utilize Flake8 for style checking and Black as a code formatter. These tools are integrated into our development workflow through the pyproject.toml file.
 
 Running Flake8
+
 bash
+
 Copy code
-flake8 .
+
+flake8
+
 Running Black
+
 bash
+
 Copy code
-black .
+
+black
+
 Sorting Algorithm
+
 The int_sort.py script implements an integer sorting algorithm using bubble, quick, and insertion methods. We use Numpy to adhere to standard Python docstring practices.
 
-GitHub Actions Workflow
+
+GitHub Actions Workflow:
+
 The python-workflow.yaml file defines a GitHub Actions workflow named "Python Package Workflow." This workflow is triggered on every push or pull request to the main branch. The workflow performs the following tasks:
+
 
 Build and Test Job:
 
 Builds the package for Ubuntu, MacOS, and Windows with Python versions 3.9 and 3.10.
 Installs dependencies, lints with Flake8, formats with Black, and tests with pytest.
+
+
 Deploy Job:
 
 Builds the Python package using setup.py.
 Publishes the package to the test PyPI server.
 
-Authors
-Callen Shaeffer
-Caiden
-Kevin Bretthauer
-Jackson
-Silva
+
+Authors:
+
+Callen Shaeffer,
+Caiden Emerson,
+Kevin Bretthauer,
+Jackson Cyr,
+Christian Silva
 
 License
 LICENSE.md file for details.
