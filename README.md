@@ -59,7 +59,7 @@ Publishes the package to the test PyPI server.
 Authors
 Callen Shaeffer
 Caiden
-Kevin 
+Kevin Bretthauer
 Jackson
 Silva
 
