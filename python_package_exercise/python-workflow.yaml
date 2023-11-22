@@ -67,6 +67,6 @@ jobs:
       uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
       with:
         user: __token__
-        password: pypi-AgEIcHlwaS5vcmcCJDgyZTMxMzAzLTgyYWItNDE1Yy05ZGNiLTllNTQ0NDY3ZTZmMAACKlszLCJiNmQ2NzY0Zi0zOTlhLTRmYWQtODFjNS0xOGU1NzllODFhZTEiXQAABiBRZXX5oh4YxJgAoNPxxZ9UMJnphPVqLuAzJKwnHkOzqA
+        password: pypi-API-KEY-HERE
         repository_url: https://test.pypi.org/
         package_glob: dist/*.whl
