@@ -17,18 +17,7 @@ These instructions will set up and run the project on your local machine.
    
 Install dependencies:
 
-Copy code
-
 pip install -r requirements.txt
-
-
-Set up pre-commit hooks:
-
-bash
-
-
-Copy code
-
 pre-commit install
 Pre-commit Configuration
 
