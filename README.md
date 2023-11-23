@@ -42,26 +42,7 @@ Code Quality Tools:
 
 We utilize Flake8 for style checking and Black as a code formatter. These tools are integrated into our development workflow through the pyproject.toml file.
 
-Running Flake8
-
-bash
-
-Copy code
-
-flake8
-
-Running Black
-
-bash
-
-Copy code
-
-black
-
-Sorting Algorithm
-
 The int_sort.py script implements an integer sorting algorithm using bubble, quick, and insertion methods. We use Numpy to adhere to standard Python docstring practices.
-
 
 GitHub Actions Workflow:
 
